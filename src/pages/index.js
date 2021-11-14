@@ -22,12 +22,12 @@ import Jump from 'react-reveal/Jump';
 import "./App.css";
 
 //here bad stuff
-import Landing from '../components/LandingPage'
-import Breathlife from '../components/Breathlife';
+import Landing from '../components/Landing'
+import Number from '../components/Number'
 import Slider from '../components/Slider'
-import Portfolio from '../components/Portfolio';
-import Store from '../components/Store'
-import Last from '../components/Last'
+import ProcessProject from '../components/ProcessProject'
+import Company from '../components/Company'
+
 const Home = () => {
     const [Dark, setDark] = useState("false");
     const [isOpen,setIsOpen] = useState(false);
@@ -61,23 +61,29 @@ const Home = () => {
         <>  
        
          <Sidebar  Dark={Dark} isOpen={isOpen} toggle={toggle} />
-            <Navbar Dark={Dark} toggleDark={toggleDark} toggle={toggle}/>
+         {/*  */}
+            {/* <Navbar Dark={Dark} toggleDark={toggleDark} toggle={toggle}/> */}
       <Backg Dark={Dark}
-      className ="container-fluid">
+      className ="container-fluid-fluid">
       
       {/* landing page */}
       <Landing Dark={Dark} />
 
+        <Number/>
+        <ProcessProject />
+
       {/*  BREATHE LIFE  */}
-      <Breathlife  Dark={Dark}/>
+     {/* Company */}
+     <Company/>
       {/* slider */}
      <Slider  Dark={Dark}/>
+     
   {/* DIVERSE & TRULY UNIQUE PORTFOLIOS  */}
-      <Portfolio  Dark={Dark}/>
+      {/* <Portfolio  Dark={Dark}/> */}
       {/* YOUR ONLINE ART STORE */}
-      <Store  Dark={Dark}/>
+      {/* <Store  Dark={Dark}/> */}
 {/* last */}
-      <Last  Dark={Dark}/>
+      {/* <Last  Dark={Dark}/> */}
     </Backg>
      
             <Footer/>
