@@ -16,7 +16,7 @@ const index = () => {
             <div className="py-5">
             <p className="fs-5 p-0 m-0 fw-bold text-center">
             HELLO THERE </p>
-            <h1 ClassName="text-center fw-bold">We Are Glint</h1>
+            <h1 className="text-center fw-bold">We Are Glint</h1>
                  <p className="text-center px-5 container fs-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
                 </p>
                 <div className="container-fluid ">

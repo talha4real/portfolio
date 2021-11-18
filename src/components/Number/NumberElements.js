@@ -9,7 +9,7 @@ export const Number = styled.div`
 
 export const H1 = styled.h1`
     padding: 0 0 2rem 0;
-    text-align: center;
+   
     font-weight: 500;
     font-size: 4em;
     color: #fff;
