@@ -11,7 +11,7 @@
     "react-animate-on-scroll": "^2.1.5",
     "react-animated-cursor": "^2.2.0",
     "react-animated-slider": "^2.0.0",
-    "react-bootstrap": "^2.0.0-rc.1",
+    "react-bootstrap": "^2.0.2",
     "react-canvas-draw": "^1.1.1",
     "react-dom": "^17.0.2",
     "react-fast-marquee": "^1.2.1",
@@ -24,7 +24,6 @@
     "react-scroll": "^1.8.4",
     "react-slick": "^0.28.1",
     "react-slideshow-image": "^3.5.0",
-    "reactstrap": "^8.10.0",
     "styled-button-component": "^4.0.0",
     "styled-components": "^5.3.1",
     "styled-dropdown-component": "^4.0.0"

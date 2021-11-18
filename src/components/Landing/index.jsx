@@ -7,8 +7,8 @@ const index = () => {
              <header>
         
         <Background
-          class="container-fluid" stye={{background: `url(${hero})`}}>
-          <div class="py-5 mb-5 text-center ">
+          className="container-fluid" style={{background: `url(${hero})`}}>
+          <div className="py-5 mb-5 text-center ">
                 <h1>We are a creative group
                     of people who design <br/>
                     influential brands and
