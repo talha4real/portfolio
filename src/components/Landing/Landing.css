@@ -1,0 +1,22 @@
+.Button{
+    background: transparent !important; 
+    border: 1px solid #39b54a !important;
+}
+.typewriter {
+    overflow: hidden; 
+    border-right: .10em solid #39b54a; 
+    white-space: nowrap; 
+    animation: 
+      typing 4s steps(40, end),
+      blink-caret .75s infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #39b54a; }
+  }

@@ -27,7 +27,7 @@ import Number from '../components/Number'
 import Slider from '../components/Slider'
 import ProcessProject from '../components/ProcessProject'
 import Company from '../components/Company'
-
+import ContactUs from '../components/ContactUs';
 const Home = () => {
     const [Dark, setDark] = useState("false");
     const [isOpen,setIsOpen] = useState(false);
@@ -70,13 +70,18 @@ const Home = () => {
       <Landing Dark={Dark} />
 
         <Number/>
+
         <ProcessProject />
+        <div style={{ backgroundColor: "#e6e6e6"}}>
+
+         <Company/>
+     <Slider  Dark={Dark}/>
+        </div>
+
 
       {/*  BREATHE LIFE  */}
      {/* Company */}
-     <Company/>
       {/* slider */}
-     <Slider  Dark={Dark}/>
      
   {/* DIVERSE & TRULY UNIQUE PORTFOLIOS  */}
       {/* <Portfolio  Dark={Dark}/> */}
@@ -84,6 +89,7 @@ const Home = () => {
       {/* <Store  Dark={Dark}/> */}
 {/* last */}
       {/* <Last  Dark={Dark}/> */}
+      <ContactUs/>
     </Backg>
      
             <Footer/>
