@@ -69,7 +69,7 @@ const Home = () => {
       {/* landing page */}
       <Landing Dark={Dark} />
 
-        <Number/>
+        {/* <Number/> */}
 
         <ProcessProject />
         <div style={{ backgroundColor: "#e6e6e6"}}>

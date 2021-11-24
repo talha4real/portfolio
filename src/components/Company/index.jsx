@@ -11,13 +11,13 @@ import c8 from '../../images/8.webp';
 
 const index = () => {
     return (
-        <div>
+        <div style={{paddingTop:"150px"}}>
             <div >
             <div className="pt-5">
             <p className="fs-5 p-0 m-0 fw-bold text-center" style={{color: "#39b54a"}}>
             Our Clients </p>
             <p className="text-center fw-bold display-5">Glint has been honored to partner <br/> up with these client</p>
-                <div className="container-fluid py-3">
+                <div style={{width:"100vh"}} className="container-fluid py-3">
                         <Marquee style={{ position: "relative", zIndex: "0" }} speed={50} direction={"right"} pauseOnHover={true} gradient={false}>
                             <img className="img-fluid ms-5 ps-2" style={{width: "10em"}} src={c1} alt="Image 1" />
                             <img className="img-fluid ms-5 ps-2" style={{width: "10em"}} src={c2} alt="Image 1" />
