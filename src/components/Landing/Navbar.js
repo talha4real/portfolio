@@ -10,29 +10,25 @@ const Navbar = ({ showNav, togglenav }) => {
                 <h3 style={{ color: '#39b54a' }}>
                     Navigation
                 </h3>
-                <span style={{ transform: 'translate(20px, 26px)' }} onClick={togglenav}>
+                <span style={{ transform: 'translate(25px, 26px)' }} onClick={togglenav}>
                     <FontAwesomeIcon icon={faTimes} />
                 </span>
 
             </div>
             <ul>
                 <li>
-                    <a href='/'>Home</a>
+                    <a href='#home'>Home</a>
                 </li>
                 <li>
-                    <a href='/'>Contact</a>
+                    <a href='#contact'>Contact</a>
                 </li>
+
                 <li>
-                    <a href='/'>About us</a>
+                    <a href='#services'>Service</a>
                 </li>
+
                 <li>
-                    <a href='/'>Service</a>
-                </li>
-                <li>
-                    <a href='/'>Work</a>
-                </li>
-                <li>
-                    <a href='/'>Client</a>
+                    <a href='#client'>Client</a>
                 </li>
             </ul>
         </div>

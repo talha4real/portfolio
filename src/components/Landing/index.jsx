@@ -7,7 +7,7 @@ import Navbar from './Navbar';
 const index = ({ showNav, setShowNav, togglenav }) => {
 
   return (
-    <div>
+    <div id="home">
 
       {/* <header> */}
       <Header setShowNav={setShowNav} togglenav={togglenav} showNav={showNav} />
