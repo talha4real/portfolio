@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 
@@ -30,71 +30,77 @@ import Company from '../components/Company'
 import ContactUs from '../components/ContactUs';
 const Home = () => {
     const [Dark, setDark] = useState("false");
-    const [isOpen,setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+    const [showNav, setShowNav] = useState(false);
     let primaryOptions = {
-        type      : 'loop',
-  
-    	autoplay  : true,
-        perPage   : 4,
-        perMove   : 1,
-        gap       : '2rem',
+        type: 'loop',
+
+        autoplay: true,
+        perPage: 4,
+        perMove: 1,
+        gap: '2rem',
         pagination: true,
     };
-  
+
     const toggle = () => {
         setIsOpen(!isOpen)
     }
 
-    const toggleDark = () =>{
+    const togglenav = () => {
+        setShowNav(!showNav)
+    }
+
+
+    const toggleDark = () => {
         setDark(!Dark);
         console.log(Dark);
     }
     const Backg = styled.div`
   
-    background: ${({Dark}) => (Dark ? 'white' : 'black')};
+    background: ${({ Dark }) => (Dark ? 'white' : 'black')};
   
 `
-    
 
-    
+
+
     return (
-        <>  
-       
-         <Sidebar  Dark={Dark} isOpen={isOpen} toggle={toggle} />
-         {/*  */}
+        <>
+
+            <Sidebar Dark={Dark} isOpen={isOpen} toggle={toggle} />
+            {/*  */}
             {/* <Navbar Dark={Dark} toggleDark={toggleDark} toggle={toggle}/> */}
-      <Backg Dark={Dark}
-      className ="container-fluid-fluid">
-      
-      {/* landing page */}
-      <Landing Dark={Dark} />
+            <Backg Dark={Dark}
+                className="container-fluid-fluid">
 
-        {/* <Number/> */}
+                {/* landing page */}
+                <Landing Dark={Dark} showNav={showNav} setShowNav={setShowNav} togglenav={togglenav} />
 
-        <ProcessProject />
-        <div style={{ backgroundColor: "#e6e6e6"}}>
+                {/* <Number/> */}
 
-         <Company/>
-     <Slider  Dark={Dark}/>
-        </div>
+                <ProcessProject />
+                <div style={{ backgroundColor: "#e6e6e6" }}>
+
+                    <Company />
+                    <Slider Dark={Dark} />
+                </div>
 
 
-      {/*  BREATHE LIFE  */}
-     {/* Company */}
-      {/* slider */}
-     
-  {/* DIVERSE & TRULY UNIQUE PORTFOLIOS  */}
-      {/* <Portfolio  Dark={Dark}/> */}
-      {/* YOUR ONLINE ART STORE */}
-      {/* <Store  Dark={Dark}/> */}
-{/* last */}
-      {/* <Last  Dark={Dark}/> */}
-      <ContactUs/>
-    </Backg>
-     
-            <Footer/>
-    
-         
+                {/*  BREATHE LIFE  */}
+                {/* Company */}
+                {/* slider */}
+
+                {/* DIVERSE & TRULY UNIQUE PORTFOLIOS  */}
+                {/* <Portfolio  Dark={Dark}/> */}
+                {/* YOUR ONLINE ART STORE */}
+                {/* <Store  Dark={Dark}/> */}
+                {/* last */}
+                {/* <Last  Dark={Dark}/> */}
+                <ContactUs />
+            </Backg>
+
+            <Footer />
+
+
         </>
     )
 }

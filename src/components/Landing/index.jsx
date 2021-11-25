@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Background, P } from './LandingElements';
 import Slide from 'react-reveal/Slide';
 import './Landing.css';
 import Header from './header';
-const index = () => {
+import Navbar from './Navbar';
+const index = ({ showNav, setShowNav, togglenav }) => {
+
   return (
     <div>
 
       {/* <header> */}
-      <Header />
+      <Header setShowNav={setShowNav} togglenav={togglenav} showNav={showNav} />
+
+      <Navbar showNav={showNav} togglenav={togglenav} />
       <Background
         className="container-fluid">
         <Slide bottom>

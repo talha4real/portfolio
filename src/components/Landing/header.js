@@ -3,7 +3,7 @@ import './header.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
-function Header() {
+function Header({ setShowNav, showNav, togglenav }) {
     return (
         <div className='s-header'>
             <div className='headerLogo'>
@@ -11,14 +11,12 @@ function Header() {
 
                 </a>
             </div>
-            <nav>
 
-            </nav>
             <a className='header-menu-toggle' href='#0'>
                 <span className='header-menu-text' style={{ fontSize: '1.3rem', textTransform: 'uppercase', letterSpacing: '0.3rem', color: '#39b54a' }}>
                     Menu
                 </span>
-                <span className='header-menu-icon' style={{ transform: 'translate(10px, 0px)' }}>
+                <span className='header-menu-icon' style={{ transform: 'translate(10px, 0px)' }} onClick={togglenav}>
                     <FontAwesomeIcon icon={faBars} />
                 </span>
             </a>
