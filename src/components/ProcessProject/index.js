@@ -12,8 +12,8 @@ import './Project.css';
 const index = () => {
     return (
         <div>
-        <div>
-                <div className="py-5">
+        <div style={{padding:"200px"}}>
+            <div className="py-5" >
             <p className="fs-5 p-0 m-0 fw-bold text-center" style={{color: "#39b54a"}}>
             WHAT WE DO </p>
                  <p className="text-center px-5 container display-5 fw-bold ">We’ve got everything you need to <br/> launch and grow your business </p>

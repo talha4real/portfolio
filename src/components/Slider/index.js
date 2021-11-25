@@ -14,8 +14,8 @@ import {Carousel} from 'react-bootstrap';
 import '../../pages/App.css';
 const Slider = ({Dark}) => {
     return (
-      <div className="m-0 p-0" Dark={Dark} >
-  <div class=" active mx-auto text-center">
+      <div  className="m-0 p-0" Dark={Dark}   >
+  <div class=" active mx-auto text-center" style={{paddingBottom:"150px"}}>
   <Carousel variant={Dark? "dark": "light"}  className="mx-auto mt-5" style={{width:"70%"}}>
 
                       <Carousel.Item>
