@@ -83,7 +83,6 @@ const Members = () => {
                             <p class="text-light mt-2 fs-5">Chris</p>
                         </div>
 
-                     
                     </div>
                 </div>
                 </Fade>

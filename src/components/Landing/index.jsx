@@ -1,25 +1,33 @@
 import React from 'react'
-import { Background } from './LandingElements';
-import hero from '../../images/hero-bg.jpg';
+import { Background, P } from './LandingElements';
+import Slide from 'react-reveal/Slide';
+import './Landing.css';
 import Header from './header';
-
 const index = () => {
   return (
     <div>
 
-      <header>
-        <Header />
-        <Background
-          className="container-fluid" style={{ background: `url(${hero})` }}>
-          <div className="py-5 mb-5 text-center ">
-            <h1>We are a creative group
+      {/* <header> */}
+      <Header />
+      <Background
+        className="container-fluid">
+        <Slide bottom>
+
+
+          <div className="  text-center ">
+            <P className="typewriter text-white display-4">We are a creative group
               of people who design <br />
               influential brands and
-              digital experiences.</h1>
+              digital experiences.</P>
+            <div class="d-grid mx-auto gap-2 col-6 d-md-flex justify-content-cenetr pt-4">
+              <button class="btn col-md-6 col-sm-12 fw-bold py-3 btn-primary me-md-2" type="button">Start Projects</button>
+              <button class="Button btn col-md-6 col-sm-12 fw-bold py-3 btn-primary" type="button">About More us</button>
+            </div>
           </div>
-        </Background>
-      </header>
-    </div>
+        </Slide>
+      </Background>
+      {/* </header> */}
+    </div >
   )
 }
 

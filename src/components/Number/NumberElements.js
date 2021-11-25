@@ -13,7 +13,10 @@ export const H1 = styled.h1`
     font-weight: 500;
     font-size: 4em;
     color: #fff;
-    @media screen and (max-width: 768px){
-    
+    @media screen and (max-width: 576px){
+        font-size: 4em !important;
+    }
+    @media  (min-width: 576px) and (max-width: 786px){
+        font-size: 4em !important;
     }
 `;

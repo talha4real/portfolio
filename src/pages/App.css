@@ -65,19 +65,14 @@ background:  url('./graphics/landing-ng-1.webp') no-repeat;
 
 70% {background-position: right center;}
 }
-svg:hover {
-border: 2px solid #000;
-}
+
 .btn{
 box-shadow: none !important;
 border: none !important;
-background-color: #000000 !important;
-transition: all 0.9s ease-in-out 0.5s;
+background-color: #39b54a !important;
+
 }
 
-.btn:hover, .btn:active, .btn:focus{
-border: 5px solid #6c757dd1 !important;
-}
 @media (max-width: 576px) {
 h1{
   font-size: 6em !important;
@@ -107,4 +102,20 @@ h1{
 .eldon{
 font-size: 10rem !important;
 }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  background-color: #0E0E0E !important;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color:rgb(57, 181, 74);;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }

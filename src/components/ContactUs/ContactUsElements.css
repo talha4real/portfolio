@@ -1,0 +1,30 @@
+input,textarea{
+    box-shadow: none !important;
+    color: #ffffff !important;
+    background-color: transparent !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4) !important;
+}
+input::placeholder ,textarea::placeholder{
+    color:  rgba(255, 255, 255, 0.4)  !important;
+}
+input:hover,textarea:hover{
+   
+    border-bottom: 1px solid #39b54a !important;
+}
+
+.contactpara{
+    color: rgba(255, 255, 255, 0.4)  !important;
+}
+
+svg{
+    color: #ffffff !important;
+    cursor: pointer !important;
+
+}
+svg:hover{
+    color: #39b54a !important;
+
+}

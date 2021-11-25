@@ -12,14 +12,12 @@ import c8 from '../../images/8.webp';
 const index = () => {
     return (
         <div>
-            <div>
-            <div className="py-5">
-            <p className="fs-5 p-0 m-0 fw-bold text-center">
-            HELLO THERE </p>
-            <h1 className="text-center fw-bold">We Are Glint</h1>
-                 <p className="text-center px-5 container fs-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
-                </p>
-                <div className="container-fluid ">
+            <div >
+            <div className="pt-5">
+            <p className="fs-5 p-0 m-0 fw-bold text-center" style={{color: "#39b54a"}}>
+            Our Clients </p>
+            <p className="text-center fw-bold display-5">Glint has been honored to partner <br/> up with these client</p>
+                <div className="container-fluid py-3">
                         <Marquee style={{ position: "relative", zIndex: "0" }} speed={50} direction={"right"} pauseOnHover={true} gradient={false}>
                             <img className="img-fluid ms-5 ps-2" style={{width: "10em"}} src={c1} alt="Image 1" />
                             <img className="img-fluid ms-5 ps-2" style={{width: "10em"}} src={c2} alt="Image 1" />
